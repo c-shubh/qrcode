@@ -7,11 +7,14 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "cross-env NODE_DEBUG=gh-pages node deploy-gh-pages.cjs"
   },
   "dependencies": {
     "@ant-design/icons": "^5.2.6",
     "antd": "^5.11.4",
+    "cross-env": "^7.0.3",
+    "gh-pages": "^6.1.0",
     "html-to-image": "^1.11.11",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
