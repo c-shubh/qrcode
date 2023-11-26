@@ -54,7 +54,7 @@ const copyToClipboard = async () => {
 export default function App() {
   const [text, setText] = useState("");
   const [background, setBackground] = useState("#ffffff");
-  const [foreground, setForeground] = useState("#000000");
+  const [foreground, setForeground] = useState("#1f1f1f");
   const [isCopied, setIsCopied] = useState(false);
   const defaultText = "Enter text";
   const items: MenuProps["items"] = [
